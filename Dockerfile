@@ -9,7 +9,7 @@ CMD ["/sbin/my_init"]
 
 # Install Citrix Receiver
 ADD ./files/ /tmp/
-RUN dpkg -i /files/icaclient_13.3.0.344519_amd64.deb
+RUN dpkg -i /tmp/icaclient_13.3.0.344519_amd64.deb
 
 
 VOLUME ["/config"]
