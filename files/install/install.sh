@@ -24,6 +24,7 @@
 cd $HOME
 mv $HOME/.ICAClient $HOME/.ICAClient_save
 sudo add-apt-repository universe
+sudo apt-get update
 sudo apt-get install -y apt-file
 sudo apt-get -y install git
 sudo dpkg -P icaclient
