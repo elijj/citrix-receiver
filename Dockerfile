@@ -11,7 +11,7 @@ CMD ["/sbin/my_init"]
 ADD ./files/ /tmp/
 RUN sudo apt-get update
 RUN dpkg -i /tmp/icaclient_13.3.0.344519_amd64.deb
-RUN sudo apt-get install -f -y
+RUN sudo apt-get -y install libgtk2.0-0 libwebkit-1.0-2
 
 
 VOLUME ["/config"]
