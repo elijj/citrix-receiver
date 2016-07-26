@@ -8,10 +8,11 @@ ENV USER_ID="99" GROUP_ID="100" APP_NAME="Citrix_Receiver" TERM="xterm" WIDTH="1
 CMD ["/sbin/my_init"]
 
 # Install Citrix Receiver
-ADD ./files/ /tmp/
-RUN sudo apt-get update
-RUN sudo apt-get -y install libgtk2.0-0 libwebkit-1.0-2
-RUN dpkg -i /tmp/icaclient_13.3.0.344519_amd64.deb
+# cd /tmp
+# wget http://www.vinnymac.org/downloads/citrix/icaclient-mod-ubuntu-14-04.deb
+# sudo dpkg -i icaclient-mod-ubuntu-14-04.deb
+# sudo apt-get install -f
+# sudo ln -s /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/cacerts/
 
 
 VOLUME ["/config"]
