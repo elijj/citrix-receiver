@@ -8,6 +8,7 @@ sudo apt-get install -f
 sudo ln -s /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/cacerts/
 
 sudo apt-get install chromium-browser
+sudo apt-get -f install
 
 cp /tmp/install/startapp.sh /startapp.sh
 chmod +x /startapp.sh
