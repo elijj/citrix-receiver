@@ -7,9 +7,10 @@ apt-get update
 #sudo apt-get -f -y install
 #sudo ln -s /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/cacerts/
 
+# Install chromium browser
 #sudo apt-get install gconf-service libgconf-2-4 libatk1.0-0 libgtk2.0-0 libnspr4 libnss3 libxss1 libnss3 xdg-utils chromium-codecs-ffmpeg-extra chromium-codecs-ffmpeg chromium-browser-l10n
-sudo apt-get install chromium-browser
-sudo apt-get -f -y install
+sudo apt-get install -y chromium-browser
+#sudo apt-get -f -y install
 #sudo apt-get install chromium-browser
 
 
