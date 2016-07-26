@@ -23,6 +23,8 @@
 # Install via mark911 instructions
 cd $HOME
 mv $HOME/.ICAClient $HOME/.ICAClient_save
+sudo add-apt-repository universe
+sudo apt-get -f -y install git
 sudo dpkg -P icaclient
 rm -rf foo
 sudo dpkg --add-architecture i386 # only needed once
