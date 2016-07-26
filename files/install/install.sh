@@ -26,7 +26,9 @@ mv $HOME/.ICAClient $HOME/.ICAClient_save
 sudo add-apt-repository universe
 sudo apt-get update
 sudo apt-get install -y apt-file
+sudo apt-file update
 sudo apt-get -y install git
+sudo apt-get -y install xdg-utils
 sudo dpkg -P icaclient
 rm -rf foo
 sudo dpkg --add-architecture i386 # only needed once
