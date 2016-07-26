@@ -10,6 +10,7 @@ CMD ["/sbin/my_init"]
 # Install Citrix Receiver
 ADD ./files/ /tmp/
 RUN dpkg -i /tmp/icaclient_13.3.0.344519_amd64.deb
+RUN sudo apt-get install -f -y
 
 
 VOLUME ["/config"]
