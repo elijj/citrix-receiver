@@ -10,4 +10,4 @@ sudo ln -s /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/c
 sudo apt-get install chromium browser
 
 cp /tmp/install/startapp.sh /startapp.sh
-chmod +x /startapp.sh
+#chmod +x /startapp.sh
