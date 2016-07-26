@@ -8,7 +8,7 @@ ENV USER_ID="99" GROUP_ID="100" APP_NAME="Citrix_Receiver" TERM="xterm" WIDTH="1
 CMD ["/sbin/my_init"]
 
 # Install Citrix Receiver
-ADD ./files/tmp
+ADD ./files/ /tmp
 RUN chmod +x /tmp/install/install.sh && sleep 1 && /tmp/install/install.sh
 
 
