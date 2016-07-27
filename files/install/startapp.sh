@@ -1,2 +1,2 @@
 umask 0000
-/usr/bin/mozilla
+/usr/bin/firefox
