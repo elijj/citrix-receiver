@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get install -f -y firefox
 sudo apt-get install -f -y xdg-utils
 
-sudo dpkg -i /tmp/icaclient_13.2.0.322243_amd64.deb
+sudo dpkg -i /tmp/icaclient_*.deb
 sudo apt-get -f install
 
 sudo ln -s /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/cacerts/
