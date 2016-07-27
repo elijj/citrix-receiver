@@ -4,7 +4,8 @@
 sudo dpkg --add-architecture i386
 sudo apt-get update
 
-sudo apt-get install firefox
+sudo apt-get install -f -y firefox
+sudo apt-get install -f -y xdg-utils
 
 sudo dpkg -i /config/icaclient_*.deb
 sudo apt-get -f install
