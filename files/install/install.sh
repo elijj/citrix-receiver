@@ -6,6 +6,8 @@ mv $HOME/.ICAClient $HOME/.ICAClient_save
 sudo add-apt-repository universe
 sudo apt-get update
 sudo apt-get install -y apt-file
+sudo apt-get install firefox
+sudo apt-get -f install
 sudo apt-file update
 sudo apt-get -y install git
 sudo apt-get -y install xdg-utils
