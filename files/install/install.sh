@@ -1,25 +1,5 @@
 #!/bin/bash
 
-#apt-get update
-
-# Install chromium browser
-#sudo apt-get install -y chromium-browser
-
-# Install ICAClient
-#sudo apt-get install -f -y gdebi
-#wget http://www.vinnymac.org/downloads/citrix/icaclient-mod-ubuntu-14-04.deb
-#sudo dpkg -i icaclient-mod-ubuntu-14-04.deb
-#sudo gdebi icaclient-mod-ubuntu-14-04.deb
-#sudo apt-get -f -y install
-#sudo ln -s /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/cacerts/
-
-# Set startup apps (e.g., chromium)
-#cp /tmp/install/startapp.sh /startapp.sh
-#chmod +x /startapp.sh
-
-# Clean up
-#sudo apt-get autoremove
-
 # Install via mark911 instructions
 cd $HOME
 mv $HOME/.ICAClient $HOME/.ICAClient_save
@@ -65,3 +45,7 @@ sudo dpkg -i icaclient_amd64_fixed_for_14.04_LTS.deb
 sudo ln -s /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/cacerts
 sudo c_rehash /opt/Citrix/ICAClient/keystore/cacerts/
 xdg-mime default wfica.desktop application/x-ica
+
+# Set startup apps (e.g., mozilla)
+cp /tmp/install/startapp.sh /startapp.sh
+chmod +x /startapp.sh
